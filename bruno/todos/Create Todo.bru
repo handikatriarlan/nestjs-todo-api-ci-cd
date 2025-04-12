@@ -1,0 +1,18 @@
+meta {
+  name: Create Todo
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{baseUrl}}/todos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Belajar Bruno 🔥",
+    "description": "Ngopi sambil ngoding NestJS + CI/CD"
+  }
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Update Todo
+  type: http
+  seq: 5
+}
+
+put {
+  url: {{baseUrl}}/todos/:id
+  body: json
+  auth: inherit
+}
+
+params:path {
+  id: 67f9ebeb8a3fc4c67f3c3ed2
+}
+
+body:json {
+  {
+    "title": "Update Belajar Bruno 🔥",
+    "description": "Update Ngopi sambil ngoding NestJS + CI/CD",
+    "isDone": true
+  }
+}

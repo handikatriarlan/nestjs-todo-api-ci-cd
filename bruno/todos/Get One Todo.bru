@@ -1,0 +1,15 @@
+meta {
+  name: Get One Todo
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{baseUrl}}/todos/:id
+  body: none
+  auth: inherit
+}
+
+params:path {
+  id: 67f9ebeb8a3fc4c67f3c3ed2
+}
